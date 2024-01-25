@@ -1,0 +1,37 @@
+root@datagen-27:/sys/kernel/debug/ceph/e42fd4b0-313b-11ee-9a00-31da71873773.client1282187# cat metrics 
+item                               total
+------------------------------------------
+opened files  / total inodes       4 / 14129
+pinned i_caps / total inodes       14129 / 14129
+opened inodes / total inodes       2 / 14129
+
+item          total       avg_lat(us)     min_lat(us)     max_lat(us)     stdev(us)
+-----------------------------------------------------------------------------------
+read          1218753     3116            208             8741271         2154
+write         34945       24003           3017            2191493         16156
+metadata      1703642     8395            127             17936115        1497
+
+item          total       avg_sz(bytes)   min_sz(bytes)   max_sz(bytes)  total_sz(bytes)
+----------------------------------------------------------------------------------------
+read          1218753     227009          1               4194304         276668475618
+write         34945       85860           1               4194304         3000382055
+
+item          total           miss            hit
+-------------------------------------------------
+d_lease       306             19110           3317071969
+caps          14129           145404          3761682333
+root@datagen-27:/sys/kernel/debug/ceph/e42fd4b0-313b-11ee-9a00-31da71873773.client1282187# cat bdi/stats 
+BdiWriteback:                0 kB
+BdiReclaimable:              0 kB
+BdiDirtyThresh:              0 kB
+DirtyThresh:          35979376 kB
+BackgroundThresh:     17967720 kB
+BdiDirtied:            3071616 kB
+BdiWritten:            3036864 kB
+BdiWriteBandwidth:          20 kBps
+b_dirty:                     0
+b_io:                        0
+b_more_io:                   0
+b_dirty_time:                0
+bdi_list:                    1
+state:                       1
