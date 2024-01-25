@@ -1,0 +1,19 @@
+Seq Write benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+    client:   70 MiB/s rd, 762 MiB/s wr, 337 op/s rd, 24.41k op/s wr
+    client:   60 MiB/s rd, 551 MiB/s wr, 303 op/s rd, 35.12k op/s wr
+    client:   13 MiB/s rd, 161 MiB/s wr, 101 op/s rd, 41.30k op/s wr
+
+Seq Read benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+    client:   1.6 GiB/s rd, 219 KiB/s wr, 28.76k op/s rd, 89 op/s wr
+    client:   370 MiB/s rd, 475 KiB/s wr, 90.38k op/s rd, 89 op/s wr
+
+Rand Write benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+    client:   63 MiB/s rd, 1.5 GiB/s wr, 8.77k op/s rd, 5.50k op/s wr
+    client:   14 MiB/s rd, 1.8 GiB/s wr, 81 op/s rd, 13.86k op/s wr
+    client:   6.6 MiB/s rd, 1.2 GiB/s wr, 61 op/s rd, 30.13k op/s wr
+
+Rand Read benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+    client:   317 MiB/s rd, 841 MiB/s wr, 426 op/s rd, 10.98k op/s wr
+    client:   2.8 GiB/s rd, 882 MiB/s wr, 25.68k op/s rd, 291 op/s wr
+    client:   4.0 GiB/s rd, 226 MiB/s wr, 89.63k op/s rd, 124 op/s wr
+    client:   2.4 GiB/s rd, 295 KiB/s wr, 197.86k op/s rd, 20 op/s wr

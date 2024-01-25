@@ -1,0 +1,31 @@
+root@client-03:/mounts/ud-data/benchuser3/7563f2ef-cb92-4d3b-8fd8-288d056864cf/testdir# bash iobench.sh
+
+Hostname: client-03
+Seq Write benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+ BS=1M    write: IOPS=1049, BW=1049MiB/s (1100MB/s)(3072MiB/2928msec); 0 zone resets
+ BS=128K  write: IOPS=3050, BW=381MiB/s (400MB/s)(3072MiB/8057msec); 0 zone resets
+ BS=64K   write: IOPS=4066, BW=254MiB/s (267MB/s)(3072MiB/12086msec); 0 zone resets
+ BS=32K   write: IOPS=5586, BW=175MiB/s (183MB/s)(3072MiB/17596msec); 0 zone resets
+ BS=16K   write: IOPS=7073, BW=111MiB/s (116MB/s)(3072MiB/27795msec); 0 zone resets
+ BS=4K    write: IOPS=6774, BW=26.5MiB/s (27.7MB/s)(3072MiB/116085msec); 0 zone resets
+Seq Read benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+ BS=1M    read: IOPS=1114, BW=1115MiB/s (1169MB/s)(3072MiB/2756msec)
+ BS=128K  read: IOPS=7948, BW=994MiB/s (1042MB/s)(3072MiB/3092msec)
+ BS=64K   read: IOPS=8679, BW=542MiB/s (569MB/s)(3072MiB/5663msec)
+ BS=32K   read: IOPS=10.9k, BW=340MiB/s (357MB/s)(3072MiB/9030msec)
+ BS=16K   read: IOPS=14.0k, BW=219MiB/s (230MB/s)(3072MiB/13997msec)
+ BS=4K    read: IOPS=17.0k, BW=70.1MiB/s (73.5MB/s)(3072MiB/43807msec)
+Rand Write benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+ BS=1M    write: IOPS=817, BW=817MiB/s (857MB/s)(3072MiB/3760msec); 0 zone resets
+ BS=128K  write: IOPS=5057, BW=632MiB/s (663MB/s)(3072MiB/4859msec); 0 zone resets
+ BS=64K   write: IOPS=6562, BW=410MiB/s (430MB/s)(3072MiB/7490msec); 0 zone resets
+ BS=32K   write: IOPS=7852, BW=245MiB/s (257MB/s)(3072MiB/12519msec); 0 zone resets
+ BS=16K   write: IOPS=9337, BW=146MiB/s (153MB/s)(3072MiB/21056msec); 0 zone resets
+ BS=4K    write: IOPS=10.2k, BW=39.7MiB/s (41.6MB/s)(3072MiB/77358msec); 0 zone resets
+Rand Read benchmarking: size=1G,direct=1,numjobs=3,iodepth=32
+ BS=1M    read: IOPS=1114, BW=1115MiB/s (1169MB/s)(3072MiB/2756msec)
+ BS=128K  read: IOPS=8936, BW=1117MiB/s (1171MB/s)(3072MiB/2750msec)
+ BS=64K   read: IOPS=17.9k, BW=1116MiB/s (1171MB/s)(3072MiB/2752msec)
+ BS=32K   read: IOPS=35.5k, BW=1109MiB/s (1163MB/s)(3072MiB/2770msec)
+ BS=16K   read: IOPS=70.1k, BW=1096MiB/s (1149MB/s)(3072MiB/2804msec)
+ BS=4K    read: IOPS=115k, BW=450MiB/s (471MB/s)(3072MiB/6832msec)
