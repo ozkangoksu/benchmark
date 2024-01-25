@@ -20,6 +20,8 @@ item          total           miss            hit
 -------------------------------------------------
 d_lease       306             19110           3317071969
 caps          14129           145404          3761682333
+
+
 root@datagen-27:/sys/kernel/debug/ceph/e42fd4b0-313b-11ee-9a00-31da71873773.client1282187# cat bdi/stats 
 BdiWriteback:                0 kB
 BdiReclaimable:              0 kB
